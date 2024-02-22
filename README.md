@@ -5,7 +5,7 @@
 <a/>
   
 <a>
-<img align="mid" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hakureirm&hide=html" />
+<img align="mid" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hakureirm&hide=html&count_private=true" />
 <a/>
 
 ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=Hakureirm.readme)
