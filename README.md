@@ -1,12 +1,14 @@
 ### Hi there, I am Hakureirm⚡.
 - A corporate slave.
 <a>
-<img align="left" src=https://github-readme-stats.vercel.app/api?username=Hakureirm&show_icons=true&count_private=true&hide=prs&theme=default_repocard />
+<img align="left" src=https://github-readme-stats.vercel.app/api?username=Hakureirm&show_icons=true&count_private=true&theme=default_repocard&include_all_commits=true />
 <a/>
-  
+
+
 <a>
 <img align="mid" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hakureirm&hide=html&count_private=true" />
 <a/>
+
 
 ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=Hakureirm.readme)
 
