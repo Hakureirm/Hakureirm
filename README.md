@@ -1,7 +1,7 @@
 ### Hi there, I am Hakureirm⚡.
 - A corporate slave.
 <a>
-<img align="left" src=https://github-readme-stats.vercel.app/api?username=Hakureirm&show_icons=true&count_private=true&theme=default_repocard&include_all_commits=true />
+<img align="left" src=https://github-readme-stats.vercel.app/api?username=Hakureirm&show_icons=true&theme=default_repocard&include_all_commits=true />
 <a/>
 
 
