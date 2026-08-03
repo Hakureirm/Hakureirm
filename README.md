@@ -30,12 +30,13 @@ Currently getting DeepSeek-V4 to serve on SM80. Upstream at [sgl-project/sglang]
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Hakureirm&show_icons=true&include_all_commits=true&hide_border=true&theme=github_dark&icon_color=76B900&title_color=76B900">
-  <img src="https://github-readme-stats.vercel.app/api?username=Hakureirm&show_icons=true&include_all_commits=true&hide_border=true&theme=graywhite&icon_color=76B900&title_color=2F81F7" alt="stats" height="165">
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=Hakureirm&hide_border=true&background=00000000&ring=76B900&fire=76B900&currStreakLabel=76B900&sideNums=C9D1D9&sideLabels=C9D1D9&dates=8B949E&stroke=30363D">
+  <img src="https://streak-stats.demolab.com/?user=Hakureirm&hide_border=true&background=FFFFFF00&ring=2F81F7&fire=76B900&currStreakLabel=2F81F7" alt="contributions" height="180">
 </picture>
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Hakureirm&layout=compact&hide=html,tex&count_private=true&hide_border=true&theme=github_dark&title_color=76B900">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hakureirm&layout=compact&hide=html,tex&count_private=true&hide_border=true&theme=graywhite&title_color=2F81F7" alt="languages" height="165">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Hakureirm&bg_color=00000000&color=76B900&line=76B900&point=FFFFFF&hide_border=true&area=true&height=250">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Hakureirm&theme=github-compact&hide_border=true&area=true&height=250" alt="activity" width="100%">
 </picture>
 
 <br><br>
