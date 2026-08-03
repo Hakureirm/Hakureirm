@@ -21,49 +21,9 @@ Inference stacks, on the wrong hardware.
 
 ---
 
-## What I actually do
+Embedded background — Verilog, ESP32, RISC-V. Mostly kernels and inference now: finding where an abstraction assumed hardware it doesn't have, proving the replacement is numerically identical, then making it fast.
 
-I take inference stacks apart and put them back together somewhere they don't belong — a kernel that only compiles on SM120, a model that needs 1M context on cards without the right instructions, a 0.5B LLM on a RISC-V board with no NPU.
-
-Most of it comes down to the same three things: **find where the abstraction assumed hardware it doesn't have, prove the replacement is numerically identical, then make it fast.** The proving part is where most of the time goes.
-
-Background is embedded — Verilog, ESP32, RISC-V — which turns out to be exactly the right training for reading a kernel and asking *"but what does this actually do to the registers?"*
-
----
-
-## Selected work
-
-### 🚀 Inference where it shouldn't run
-
-| | |
-|---|---|
-| **[rwkv-sglang](https://github.com/Hakureirm/rwkv-sglang)** | Production-grade RWKV-7 (Goose) inference for SGLang — exact correctness, int8, dynamic-batch serving, multi-GPU, FLA-free |
-| **[rwkv-hf-kernels](https://github.com/Hakureirm/rwkv-hf-kernels)** | Optional fused CUDA kernels for the HuggingFace RWKV-7 model |
-| **[rwkv7-hub](https://github.com/Hakureirm/rwkv7-hub)** | RWKV-7 for released `transformers` via Hub remote code — bit-identical checkpoint conversions, CPU/MPS/CUDA |
-| **[minimax-m3-ampere](https://github.com/Hakureirm/minimax-m3-ampere)** | MiniMax-M3 with fp8 KV cache and full 1M context on Ampere (A100/A800, SM80) — patches plus the CUDA-graph gotcha that costs you a week |
-| **[k230-llm](https://github.com/Hakureirm/k230-llm)** | A ~0.5B ternary LLM on a sub-$10 RISC-V edge board. CPU + RVV only. No NPU. |
-
-### 🛠️ Tools for working with agents
-
-| | |
-|---|---|
-| **[vibird](https://github.com/Hakureirm/vibird)** | Zero-config, cross-agent voice + status companion for vibe coding — talk to a desk device, watch your agent's live state, approve actions. Rust + ESP32. |
-| **[feishu-agent-loop](https://github.com/Hakureirm/feishu-agent-loop)** | Supervise long-running agent tasks from Feishu/Lark — bot pushes progress, replies wake it in seconds |
-| **[longport_mcp](https://github.com/Hakureirm/longport_mcp)** | MCP server for LongPort |
-
-### 📐 Odds and ends
-
-| | |
-|---|---|
-| **[tkkc-beamer](https://github.com/Hakureirm/tkkc-beamer)** | Unofficial LaTeX Beamer template for Xiamen University Tan Kah Kee College |
-| **[USTC-Verilog-OJ-Solved](https://github.com/Hakureirm/USTC-Verilog-OJ-Solved)** | 中科大 Verilog OJ 个人题解 |
-| **[ESP32-Arduino-DacaiCMD-Template](https://github.com/Hakureirm/ESP32-Arduino-DacaiCMD-Template)** | 移植到 ESP32 的大彩串口屏指令模板 |
-
----
-
-## Currently
-
-Getting DeepSeek-V4 to serve on SM80 — compile, dispatch, kernel, and an indexer intermediate that's several orders of magnitude too large. Upstream at [sgl-project/sglang](https://github.com/sgl-project/sglang).
+Currently getting DeepSeek-V4 to serve on SM80. Upstream at [sgl-project/sglang](https://github.com/sgl-project/sglang).
 
 ---
 
